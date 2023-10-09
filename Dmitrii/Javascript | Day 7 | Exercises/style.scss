@@ -32,10 +32,12 @@ a {
 .primary {
   font-size: 3rem;
   font-family: 'Great Vibes', cursive;
+  display: inline-block;
 }
 
 .transition {
-  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
 }
 
 .translate-on-hover {
@@ -48,6 +50,12 @@ a {
   &:hover {
     opacity: 50%;
   }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 // /////////////////////////////////////////// //
@@ -120,7 +128,7 @@ nav {
 // /////////////////////////////////////////// //
 
 .main-container {
-  // margin: 10px 140px 50px;
+  margin: 10px 140px 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -154,8 +162,6 @@ nav {
   }
 }
 
-
-
 .hero {
   margin: 170px 0 40px;
 
@@ -170,12 +176,15 @@ nav {
   }
 
   .recipe-showcase {
-    @extend .showcase;
-    flex-direction: column;
-    background: url('https://images.pexels.com/photos/15832880/pexels-photo-15832880.jpeg') no-repeat center center/cover;
+    // @extend .showcase;
+    // flex-direction: column;
+    // background: url('https://images.pexels.com/photos/15832880/pexels-photo-15832880.jpeg') no-repeat center center/cover;
+    // gap: 4rem;
+    // padding: 0 40px;
+    text-align: center;
+    height: 60vh;
     color: #fff;
     position: relative;
-
 
     &::before {
       content: '';
@@ -183,6 +192,7 @@ nav {
       width: 100%;
       height: 100%;
       position: absolute;
+      left: 0;
     }
 
     * {
@@ -190,16 +200,32 @@ nav {
     }
   }
 
+  .swiper {
+    z-index: -1;
+    height: 60vh;
+
+    // position: absolute;
+  }
+
   .translate--x {
+    // margin-top: -40%;
+    margin-top: 0px;
     font-size: 8rem;
     transform: translateX(-2000px);
     animation: come-back 0.2s ease-in-out forwards 1s;
+    position: absolute;
+    top: 40%;
+    left: 20%;
   }
 
   .translate-x {
+    // margin-top: -30%;
     transform: translateX(1500px);
     animation: come-back 0.4s ease-in-out forwards 1.5s;
     font-size: 1.5rem;
+    position: absolute;
+    top: 55%;
+    left: 20%;
   }
 
   @keyframes come-back {
@@ -210,9 +236,9 @@ nav {
 
   .about-showcase {
     @extend .recipe-showcase;
-    background: url('https://images.pexels.com/photos/4099237/pexels-photo-4099237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+    background: url('https://images.pexels.com/photos/4099237/pexels-photo-4099237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+      no-repeat center center/cover;
   }
-
 }
 
 .content-container {
@@ -235,7 +261,6 @@ nav {
   ul {
     list-style: circle;
   }
-
 }
 
 // /////////////////////////////////////////// //
@@ -265,7 +290,6 @@ footer {
     // position: relative;
 
     li {
-
       a {
         color: #fff;
       }
@@ -278,14 +302,13 @@ footer {
   }
 
   .second-nav {
-
     a {
       padding: 0 3rem;
     }
   }
 
   .wall::after {
-    content: "|";
+    content: '|';
     margin-left: 10px;
     position: absolute;
   }

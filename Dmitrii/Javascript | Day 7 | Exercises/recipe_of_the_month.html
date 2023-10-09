@@ -1,144 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/553d5d3b41.js"
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Recipe of the Month</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/553d5d3b41.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Recipe of the Month</title>
-</head>
+  <body id="home">
+    <!---------------------------------------------->
+    <!------------------- Navbar ------------------->
+    <!---------------------------------------------->
 
-<body id="home">
-
-  <!---------------------------------------------->
-  <!------------------- Navbar ------------------->
-  <!---------------------------------------------->
-
-  <nav>
-    <div class="navbar">
-      <a href="index.html">
-        <h1 class="primary">Food blog</h1>
-      </a>
-      <ul class="main-nav">
-        <li><a href="#">Recipe of the Month</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+    <nav>
+      <div class="navbar">
+        <a href="index.html">
+          <h1 class="primary animate__animated">Food blog</h1>
+        </a>
+        <ul class="main-nav">
+          <li><a href="#">Recipe of the Month</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="menu-nav">
+        <li><a href="#">Pasta</a></li>
+        <li><a href="#">Taco</a></li>
+        <li><a href="#">Pizza</a></li>
+        <li><a href="#">Dessert</a></li>
+        <li><a href="#">Breakfast</a></li>
+        <li><a href="#">Lunch</a></li>
+        <li><a href="#">Dinner</a></li>
       </ul>
-    </div>
-    <ul class="menu-nav">
-      <li><a href="#">Pasta</a></li>
-      <li><a href="#">Taco</a></li>
-      <li><a href="#">Pizza</a></li>
-      <li><a href="#">Dessert</a></li>
-      <li><a href="#">Breakfast</a></li>
-      <li><a href="#">Lunch</a></li>
-      <li><a href="#">Dinner</a></li>
-    </ul>
-  </nav>
-  <!---------------------------------------------->
-  <!------------------- Layout ------------------->
-  <!---------------------------------------------->
-  <header class="hero">
-    <div class="recipe-showcase">
+    </nav>
+    <!---------------------------------------------->
+    <!------------------- Layout ------------------->
+    <!---------------------------------------------->
+    <header class="hero">
+      <div class="recipe-showcase">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="https://images.pexels.com/photos/15832880/pexels-photo-15832880.jpeg"
+                alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://www.telegraph.co.uk/content/dam/recipes/2020/08/25/tabouleh_trans_NvBQzQNjv4BqD3d2dmOlWYuQkR76XZjLQBPoEGqOwOuJlff-2j6TslE.png?imwidth=960"
+                alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://www.vegane-kochrezepte.de/wp-content/uploads/2013/12/tabouleh-salat-1.jpg"
+                alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://schlaraffenwelt.de/wp-content/uploads/2020/04/Tabouleh.jpg"
+                alt="" />
+            </div>
+          </div>
+        </div>
+        /all-sections
 
-      <h1 class="translate--x">Tabbouleh</h1>
-      <p class="translate-x">Now it's time for our chef's favorite salad!</p>
+        <h1 class="translate--x">Tabbouleh</h1>
+        <p class="translate-x">Now it's time for our chef's favorite salad!</p>
+      </div>
+    </header>
+    <main class="content-container">
+      <div class="animate__animated animate__bounce animate__infinite">
+        Example
+      </div>
+      <h3>WHAT IS TABBOULEH SALAD?</h3>
+      <hr />
+      <p>
+        Tabbouleh is basically parsley salad. There's technically no lettuce in
+        it. It's a salad made up of parsley, tomatoes, bulgur wheat, and green
+        onions – all finely chopped and tossed with olive oil and lemon juice!
+        <br />
+        Tabbouleh salad (tabouli salad) is probably the most popular
+        Mediterranean salad, and is becoming mainstream in American grocery
+        stores all over the country and the world, which is super cool! One
+        thing that I've noticed though is that in the states, tabbouleh tends to
+        have more bulgur than the traditional recipe calls for. The way we
+        prepare it in Lebanon, the salad should be all about the parsley, with a
+        hint of bulgur thrown in there.
+      </p>
+      <img
+        src="https://feelgoodfoodie.net/wp-content/uploads/2023/04/Lebanese-Tabbouleh-Salad-09.jpg"
+        alt="" />
+      <h3>WHAT DO YOU NEED TO MAKE A TABBOULEH SALAD</h3>
+      <hr />
+      <ul>
+        <li>
+          <strong>Parsley</strong> – It's a parsley salad, so this is the star
+          of the recipe. Make sure to wash the parsley with cold water so it
+          doesn't wilt, and dry it thoroughly with a salad spinner. If you prep
+          the parsley a day in advance, it allows the herb to fully dry well for
+          the salad. I prefer to use curly parsley, but flat-leaf parsley works
+          well too.
+        </li>
+        <li>
+          <strong>Tomatoes</strong> – Get some fresh and ripe tomatoes, and if
+          they are too juicy, you can remove their core before dicing.
+        </li>
+        <li>
+          <strong>Green</strong> onions – You'll use the entire green onion
+          parts from the white to the green. This will give it a subtle taste of
+          onions while blending well with the parsley.
+        </li>
+        <li>
+          <strong>Bulgur</strong> – Use fine bulgur – the smallest you can find!
+          Bulgur is sold in four numbered grind sizes. You want to look for #1,
+          which is the smallest grind. It will resemble couscous, and it's what
+          we use in traditional tabbouleh. There is no need to cook this bulgur.
+          It simply needs to be soaked in liquid to become tender.
+        </li>
+        <li><strong>Lemon</strong> Juice – Freshly squeezed please. :)</li>
+        <li>
+          <strong>Olive</strong> Oil – Go for high-quality extra virgin olive
+          oil. You'll notice the taste difference!
+        </li>
+      </ul>
+      <h3>HOW DO YOU MAKE TABBOULEH</h3>
+      <hr />
+      <ol>
+        <li>
+          I like to start making the tabouleh by mixing the dressing. It's made
+          up of two ingredients: olive oil and lemon juice – easy enough! I
+          whisk those together until well blended, and then let the flavor
+          settle while I chop the vegetables.
+        </li>
+        <li>
+          One important tip I learned though from my mother-in-law is to add the
+          bulgur to the dressing while preparing the vegetables. This allows the
+          bulgur to absorb some of the liquid and soften – making it easier to
+          chew it in the salad. I used to soak it in water, but I prefer this
+          method because there's no risk of watering down the flavor. You'll
+          slowly start to see the bulgur get plump.
+        </li>
+        <li>
+          While the bulgur is soaking, prepare yourself for some mad chopping.
+          Tabbouleh requires a lot of chopping – it's really a labor of love.
+        </li>
+        <li>
+          That includes a bunch (well, technically 2 bunches) of parsley,
+          tomatoes, and green onions. Some people use a food processor to chop
+          the parsley. But I find that it can sometimes lead to wilted chopped
+          parsley. So I always use a large chef's knife, and it does the trick.
+        </li>
+        <li>
+          When you're done chopping, transfer the bulgur and dressing mixture
+          over the chopped vegetables and gently mix everything together.
+        </li>
+        <li>
+          And that's basically the tabbouleh salad recipe! And it might be the
+          best tabbouleh recipe you'll ever have!
+        </li>
+      </ol>
+      <h3>TIPS TO MAKE THE BEST TABBOULEH SALAD RECIPE</h3>
+      <hr />
+      <ul>
+        <li>
+          <strong>Fine Chopping:</strong> Show off your chopping skills here by
+          finely chopping all the vegetables. It's tedious, but the presentation
+          is everything, and you'll get better at it with practice. Avoid using
+          a food processor, especially for the parsley, which can wilt the
+          parsley and ruin the texture of the salad.
+        </li>
+        <li>
+          <strong>Fine Bulgur:</strong> In fact, it should be extra fine bulgur
+          to be precise. The focus of the salad is on the parsley, not the
+          bulgur, so you want fine bulgur that incorporates easily into the
+          salad without standing out. The bulgur should require no cooking.
+        </li>
+        <li>
+          <strong>Fine Tomatoes:</strong> You want them to be ripe for flavor's
+          sake, but firm so they don't release too much juice. What I like doing
+          is coring the tomatoes to remove the juicy interior and use that for
+          another salad recipe. You can also just use a mesh colander to drain
+          the liquids from chopped tomatoes.
+        </li>
+      </ul>
+      <h3>HAVE FUN! :)</h3>
+      <hr />
+      <img
+        src="https://feelgoodfoodie.net/wp-content/uploads/2023/04/Lebanese-Tabbouleh-Salad-13.jpg"
+        alt="" />
+    </main>
 
-    </div>
-  </header>
-  <main class="content-container">
-    <h3>WHAT IS TABBOULEH SALAD?</h3>
-    <hr>
-    <p>Tabbouleh is basically parsley salad. There's technically no lettuce in it. It's a salad made up of parsley,
-      tomatoes, bulgur wheat, and green onions – all finely chopped and tossed with olive oil and lemon juice!
-      <br>
-      Tabbouleh salad (tabouli salad) is probably the most popular Mediterranean salad, and is becoming mainstream in
-      American grocery stores all over the country and the world, which is super cool! One thing that I've noticed
-      though is that in the states, tabbouleh tends to have more bulgur than the traditional recipe calls for. The way
-      we prepare it in Lebanon, the salad should be all about the parsley, with a hint of bulgur thrown in there.
-    </p>
-    <img src="https://feelgoodfoodie.net/wp-content/uploads/2023/04/Lebanese-Tabbouleh-Salad-09.jpg" alt="">
-    <h3>WHAT DO YOU NEED TO MAKE A TABBOULEH SALAD</h3>
-    <hr>
-    <ul>
-      <li><strong>Parsley</strong> – It's a parsley salad, so this is the star of the recipe. Make sure to wash the
-        parsley with cold water so it doesn't wilt, and dry it thoroughly with a salad spinner. If you prep the parsley
-        a day in advance, it allows the herb to fully dry well for the salad. I prefer to use curly parsley, but
-        flat-leaf parsley works well too.</li>
-      <li><strong>Tomatoes</strong> – Get some fresh and ripe tomatoes, and if they are too juicy, you can remove their
-        core before dicing.</li>
-      <li><strong>Green</strong> onions – You'll use the entire green onion parts from the white to the green. This will
-        give it a subtle taste of onions while blending well with the parsley.</li>
-      <li><strong>Bulgur</strong> – Use fine bulgur – the smallest you can find! Bulgur is sold in four numbered grind
-        sizes. You want to look for #1, which is the smallest grind. It will resemble couscous, and it's what we use in
-        traditional tabbouleh. There is no need to cook this bulgur. It simply needs to be soaked in liquid to become
-        tender.</li>
-      <li><strong>Lemon</strong> Juice – Freshly squeezed please. :)</li>
-      <li><strong>Olive</strong> Oil – Go for high-quality extra virgin olive oil. You'll notice the taste difference!
-      </li>
-    </ul>
-    <h3>HOW DO YOU MAKE TABBOULEH</h3>
-    <hr>
-    <ol>
-      <li>I like to start making the tabouleh by mixing the dressing. It's made up of two ingredients: olive oil and
-        lemon juice – easy enough! I whisk those together until well blended, and then let the flavor settle while I
-        chop the vegetables.</li>
-      <li>One important tip I learned though from my mother-in-law is to add the bulgur to the dressing while
-        preparing the vegetables. This allows the bulgur to absorb some of the liquid and soften – making it easier to
-        chew it in the salad. I used to soak it in water, but I prefer this method because there's no risk of watering
-        down the flavor. You'll slowly start to see the bulgur get plump.</li>
-      <li>While the bulgur is soaking, prepare yourself for some mad chopping. Tabbouleh requires a lot of chopping –
-        it's really a labor of love.</li>
-      <li>That includes a bunch (well, technically 2 bunches) of parsley, tomatoes, and green onions. Some people use
-        a food processor to chop the parsley. But I find that it can sometimes lead to wilted chopped parsley. So I
-        always use a large chef's knife, and it does the trick.</li>
-      <li>When you're done chopping, transfer the bulgur and dressing mixture over the chopped vegetables and gently
-        mix everything together.</li>
-      <li>And that's basically the tabbouleh salad recipe! And it might be the best tabbouleh recipe you'll ever have!
-      </li>
-    </ol>
-    <h3>TIPS TO MAKE THE BEST TABBOULEH SALAD RECIPE</h3>
-    <hr>
-    <ul>
-      <li><strong>Fine Chopping:</strong> Show off your chopping skills here by finely chopping all the vegetables. It's
-        tedious, but the presentation is everything, and you'll get better at it with practice. Avoid using a food
-        processor, especially for the parsley, which can wilt the parsley and ruin the texture of the salad.</li>
-      <li><strong>Fine Bulgur:</strong> In fact, it should be extra fine bulgur to be precise. The focus of the salad is
-        on the parsley, not the bulgur, so you want fine bulgur that incorporates easily into the salad without standing
-        out. The bulgur should require no cooking.</li>
-      <li><strong>Fine Tomatoes:</strong> You want them to be ripe for flavor's sake, but firm so they don't release too
-        much juice. What I like doing is coring the tomatoes to remove the juicy interior and use that for another salad
-        recipe. You can also just use a mesh colander to drain the liquids from chopped tomatoes.</li>
-    </ul>
-    <h3>HAVE FUN! :)</h3>
-    <hr>
-    <img src="https://feelgoodfoodie.net/wp-content/uploads/2023/04/Lebanese-Tabbouleh-Salad-13.jpg" alt="">
-  </main>
+    <!---------------------------------------------->
+    <!------------------- Footer ------------------->
+    <!---------------------------------------------->
 
-  <!---------------------------------------------->
-  <!------------------- Footer ------------------->
-  <!---------------------------------------------->
+    <footer>
+      <ul class="second-nav">
+        <li class="wall"><a href="about.html">About</a></li>
+        <li class="wall"><a href="#">Recipes</a></li>
+        <li class="wall"><a href="#">FAQ</a></li>
+        <li>
+          <a href="https://codefactory.wien/en/contact-en/" target="_blank"
+            >Contact us</a
+          >
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
+      <p>&copy; CodeFactory 2023</p>
+    </footer>
 
-  <footer>
-    <ul class="second-nav">
-      <li class="wall"><a href="about.html">About</a></li>
-      <li class="wall"><a href="#">Recipes</a></li>
-      <li class="wall"><a href="#">FAQ</a></li>
-      <li><a href="https://codefactory.wien/en/contact-en/" target="_blank">Contact us</a></li>
-    </ul>
-    <ul>
-      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-    </ul>
-    <p>&copy; CodeFactory 2023</p>
-  </footer>
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+  </body>
 </html>
