@@ -1,0 +1,115 @@
+/* Tablets */
+@media screen and (max-width: 768px) {
+
+
+  body {
+    // background-color: #fceded;
+
+    // /////////////////////////////////////////// //
+    // ////////////////// Navbar ///////////////// //
+    // /////////////////////////////////////////// //
+
+    .navbar {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .menu-nav {
+      margin: 0 0.5rem;
+
+      li {
+        padding: 0.5rem;
+      }
+    }
+
+    // /////////////////////////////////////////// //
+    // ////////////////// Layout ///////////////// //
+    // /////////////////////////////////////////// //
+
+    .showcase {
+      .translate--x {
+        font-size: 4rem;
+        transform: translateY(-1500px);
+
+      }
+
+      .translate-x {
+        font-size: 1rem;
+        transform: translateY(3000px);
+
+      }
+    }
+
+    .main-container {
+      margin: 10px 40px 50px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-container {
+      grid-template-columns: 1fr;
+    }
+
+    // /////////////////////////////////////////// //
+    // ////////////////// Footer ///////////////// //
+    // /////////////////////////////////////////// //
+
+    footer {
+
+      .second-nav {
+
+        a {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+/* Smartphones */
+@media(max-width: 480px) {
+
+  body {
+    // background-color: #edf6fc;
+    font-size: 0.7rem;
+
+    // /////////////////////////////////////////// //
+    // ////////////////// Navbar ///////////////// //
+    // /////////////////////////////////////////// //
+
+    .navbar {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .main-nav {
+        gap: 0.8rem;
+      }
+    }
+
+    .menu-nav {
+      li {
+        padding: 0.5rem;
+      }
+    }
+
+    // /////////////////////////////////////////// //
+    // ////////////////// Layout ///////////////// //
+    // /////////////////////////////////////////// //
+
+
+    .main-container {
+      margin: 10px 10px 90px;
+      grid-template-columns: 1fr;
+      padding: 15px;
+      gap: 0.5rem;
+    }
+
+    .content-container {
+      margin: 10px;
+    }
+  }
+}
